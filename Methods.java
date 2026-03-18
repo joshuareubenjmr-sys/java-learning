@@ -7,6 +7,10 @@ public class Methods {
         }
     }
 
+    public static int max(int a, int b, int c){
+        return max(max(a, b), c);
+    }
+
     public static boolean isEven (int a){
         if (a % 2 == 0){
             return true;
@@ -15,12 +19,13 @@ public class Methods {
         }
     }
 
-public static void greet (String name){
+    public static void greet (String name){
     System.out.println("Hello " + name + "!");
 }
 
-public static void main(String[] args){
+    public static void main(String[] args){
     System.out.println(max(10,20));
     System.out.println(isEven(13));
     greet("Joshua");
-}}
+    }
+}
